@@ -66,10 +66,9 @@ print(is_leap_year(2023))
 #     print(f"{name} is not a palindrome")
 # print(is_palindrome("noon"))
 
-time = "noon"
-time == time
-reversed_time == reversed(time)
-if list(time)==list(reversed_time):
-    print("is palindrome")
-else:
-    print("is not palindrome")
+def is_palindrome(name):
+    if name == name[::-1]:
+        return True
+    else:
+        return False
+print(is_palindrome("noon"))
